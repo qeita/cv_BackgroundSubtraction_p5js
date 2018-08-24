@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Hand Tracking with js-handtracking | Recognition</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+
+    <main>
+      <div id="app" class="content">
+      </div>    
+
+      <!-- <div class="controls">
+        <button id="stop" class="btn">STOP</button>
+        <button id="front" class="btn">FRONT</button>
+        <button id="rear" class="btn">REAR</button>
+      </div> -->
+
+      <div class="menu">
+        <div class="menu_item">
+          <label for="thresholdAmount">Threshold: </label><input type="range" id="thresholdAmount" value="50" min="0" max="100">
+        </div>
+        <div class="menu_item">          
+        </div>
+      </div>
+    </main>
+    
+    <script src="./assets/js/libs/p5.min.js"></script>
+    <script src="./assets/js/libs/p5.dom.min.js"></script>
+    <script defer async src="./assets/js/app.js"></script>
+  </body>
+</html>

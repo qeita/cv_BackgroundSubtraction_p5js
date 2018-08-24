@@ -1,0 +1,131 @@
+main{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+label{
+  margin: 0;
+}
+
+.content{
+  position: relative;
+  margin: 0 auto;
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: rotateY(180deg);
+}
+
+.controls{
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu{
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+}
+.menu_item{
+  margin: 0 10px;
+}
+.menu_item input{
+  margin-left: 5px;
+}
+
+.input-range[type="range"]{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #c7c7c7;
+  height: 2px;
+  width: 100%;
+}
+
+.input-range[type="range"]:focus,
+.input-range[type="range"]:active{
+  outline: none;
+}
+
+.input-range[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  width: 12px;
+  height: 12px;
+  display: block;
+  background-color: #262626;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+@media screen and (max-width: 640px){
+  .controls{
+    position: fixed;
+    margin: 0;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+  }  
+  .menu{
+    position: fixed;
+    margin: 0;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+  }  
+}
+
+.btn{
+  background: none;
+  padding: 5px 20px;
+  border: none;
+  font-size: 14px;
+  color: #444;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s all ease-out;
+}
+.btn:hover{
+  background: #888;
+  color: #fff;
+}
+
+.btn:disabled{
+  cursor: default;
+}
+.btn:disabled:hover{
+  background: none;
+  color: #444;
+}
+  
+#stop{
+  border-top: 1px solid #888;
+  border-left: 1px solid #888;
+  border-bottom: 1px solid #888;
+  border-radius: 16px 0 0 16px;
+}
+
+#front{
+  border: 1px solid #888;
+}
+
+#rear{
+  border-top: 1px solid #888;
+  border-right: 1px solid #888;
+  border-bottom: 1px solid #888;
+  border-radius: 0 16px 16px 0;
+}
