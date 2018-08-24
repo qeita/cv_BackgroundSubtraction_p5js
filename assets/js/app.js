@@ -15,8 +15,9 @@ function setup(){
   capture = createCapture({
     audio: false,
     video: {
-      width: w,
-      height: h
+      facingMode: 'user'
+      // width: w,
+      // height: h
     }
   }, () => {
     console.log('capture ready.')
